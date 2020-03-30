@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 03 - Home Study</title>
+</head>
+<body>
+    <script>
+        var horasTrabalhadas = parseInt(prompt("Digite suas horas trabalhadas: "));
+        var valorHoraTrabalhada = parseFloat(prompt("Digite o valor da sua hora trabalhada: "));
+        var percentualDesconto = parseFloat(prompt("Digite o percentual de desconto: "));
+        var calculoBruto = horasTrabalhadas * valorHoraTrabalhada;
+        var calculoDesconto = (percentualDesconto/100)*calculoBruto;
+        var calculoLiquido = calculoBruto - calculoDesconto;
+
+        console.log(`Olá, suas horas trabalhadas são: ${horasTrabalhadas} \n o seu salario bruto é: ${calculoBruto},\n e o desconto é: ${calculoDesconto},\n sendo assim seu salario liquido é: ${calculoLiquido}`)
+
+
+        //FAZENDO COM FUNÇÃO
+
+        // function calculosSalario(){
+        // var horasTrabalhadas = parseInt(prompt("Digite suas horas trabalhadas: "));
+        // var valorHoraTrabalhada = parseFloat(prompt("Digite o valor da sua hora trabalhada: "));
+        // var percentualDesconto = parseFloat(prompt("Digite o percentual de desconto: "));
+        // var calculoBruto = horasTrabalhadas * valorHoraTrabalhada;
+        // var calculoDesconto = (percentualDesconto/100)*calculoBruto;
+        // var calculoLiquido = calculoBruto - calculoDesconto;
+
+        // console.log(`Olá, suas horas trabalhadas são: ${horasTrabalhadas} \n o seu salario bruto é: ${calculoBruto},\n e o desconto é: ${calculoDesconto},\n sendo assim seu salario liquido é: ${calculoLiquido}`)
+
+        // }
+        // calculosSalario()
+    </script>
+</body>
+</html>

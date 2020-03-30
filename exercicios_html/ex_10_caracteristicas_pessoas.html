@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Exercicio 10 - Home Study</title>
+</head>
+
+<body>
+	<script>
+
+		// 100 dados de sxs, olh, cbls.
+
+		var sexos = ["fem", "masc", "fem", "fem", "fem", "masc", "fem", "masc"]; //0,2,4,6;
+		var olhos = ['cast', 'azul', 'verde', 'cast', 'azul', 'verde'];
+		var cabelos = ['preto', 'loiro', 'ruivo', 'preto', 'loiro', 'ruivo'];
+		var idades = [25, 230, 19, 26, 30, 60, 5, 99]; //retun = 60; //0,2,4
+		var resultado1 = 0;
+		var resultado2 = 0;
+
+		// recebendo informações
+		function cadastro() {
+			for (var i = 0; i < 2; i++) {
+				sexos[i] = prompt("Qual é seu sexo?");
+				olhos[i] = prompt("Qual é cor olhos?");
+				cabelos[i] = prompt("Qual é cor cabelos?");
+				idades[i] = prompt("Qual é sua idade?");
+			}
+		}
+
+		// maior idade;
+		function maiorIdade() {
+			console.log(Math.max.apply(null, idades));
+		}
+		// sexo fem 18 a 35;
+		function sexoIdade() {
+			for (var i = 0; i < idades.length; i++) {
+				if (idades[i] >= 18 && idades[i] < 36) {
+					if (sexos[i] == "fem") {
+						resultado1 += 1;
+					}
+				}
+			}
+			console.log(resultado1);
+		}
+		// olhos castanhos == cabelos pretos;
+
+		function olhosCabelo() {
+			for (var i = 0; i < olhos.length; i++) {
+				if (olhos[i] == 'cast' && cabelos[i] == 'preto') {
+					resultado2 += 1;
+				}
+			}
+			console.log(resultado2);
+		}
+
+
+	</script>
+</body>
+
+</html>

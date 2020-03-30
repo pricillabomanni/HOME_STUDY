@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 06 - Home Study</title>
+</head>
+<body>
+    <script>
+        function descontosSalario(){
+            var salarioBruto = parseFloat(prompt("Digite seu salario: "));
+            var desconto1 = salarioBruto * 0.10;
+            var salarioComDesconto1 = salarioBruto - desconto1;
+            var desconto2 = salarioComDesconto1 * 0.05;
+            var salarioComDesconto2 = salarioComDesconto1 - desconto2;
+            console.log(`Seu salario bruto é: ${salarioBruto}, com o 1º desconto fica: ${salarioComDesconto1},
+             e com o 2º desconto fica: ${salarioComDesconto2}.`)
+        }
+        descontosSalario()
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+</head>
+
+<body>
+	<script>
+		var totalHotel = [];
+		// total dia 54 < 15d, 53.6 == 15d 53 > 15.
+
+		// nome + total do cliente
+		function nomeTotal(nome = prompt("Nome?"), dias = Number(prompt("Dias?"))) {
+			if (dias < 15) {
+				diaria = dias * 54;
+				`${nome}, você ficou ${dias} dias no hotel e sua conta é de $${diaria}`;
+			} else {
+				if (dias == 15) {
+					diaria = dias * 53.6;
+					console.log(
+						`${nome}, você ficou ${dias} dias no hotel e sua conta é de $${diaria}`
+					);
+				} else {
+					diaria = dias * 53;
+					console.log(
+						`${nome}, você ficou ${dias} dias no hotel e sua conta é de $${diaria}`
+					);
+				}
+			}
+			totalHotel = [Number(totalHotel) + Number(diaria)];
+			console.log(`O Total até agora é de ${totalHotel}`);
+		}
+
+
+	</script>
+</body>
+
+</html>

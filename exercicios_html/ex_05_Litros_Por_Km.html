@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Exercicio 05 - Home Study</title>
+</head>
+
+<body>
+    <script>
+
+        function litrosPorKm() {
+            var tempoViagem = parseInt(prompt("Digite o tempo gasto de sua viagem: "));
+            var velocidadeMedia = parseInt(prompt("Digite a velocidade media gasta na viagem: "));
+            var distanciaPercorrida =  tempoViagem * velocidadeMedia;
+            var litrosGastos = distanciaPercorrida/12;
+            console.log(`sua viagem teve a velocidade media de: ${velocidadeMedia} km/h, \n o tempo da sua viagem foi de: ${tempoViagem} horas, \n percorrendo a distancia de: ${distanciaPercorrida}km  \n e gstando ${litrosGastos} litros de combustivel.`)
+                }
+        litrosPorKm()
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 07 - Home Study</title>
+</head>
+
+<body>
+    <script>
+        function diasVividos() {
+            var diaNascido = parseInt(prompt("Digite o dia que você nasceu: "));
+            var mesNascido = parseInt(prompt("Digite o mês que você nasceu: "));
+            var anoNascido = parseInt(prompt("Digite o ano que você nasceu: "));
+            var diaFinal = parseInt(prompt("Digite o dia final: "));
+            var mesFinal = parseInt(prompt("Digite o mês final: "));
+            var anoFinal = parseInt(prompt("Digite o ano final: "));
+
+            console.log((diaFinal - diaNascido) + ((mesFinal - mesNascido) * 30) + ((anoFinal - anoNascido) *365))
+        }
+        diasVividos()
+
+    </script>
+</body>
+
+</html>
